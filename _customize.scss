@@ -1,0 +1,23 @@
+@import "./Netflix-assets/assets/scss/functions";
+@import "./Netflix-assets/assets/scss/variables";
+
+$new-bg-dark: #141414;
+$new-gray: gray;
+$white: white;
+$light-gray:#666666;
+$button-gray:#333333;
+$settings-button:#e1e1e1;
+
+$new-theme-colors:(
+    "bg-dark":$new-bg-dark,
+    "gray": $new-gray,
+    "white": $white,
+    "light-gray": $light-gray,
+    "button-gray": $button-gray,
+    "settings": $settings-button,
+);
+
+
+$theme-colors:map-merge($theme-colors , $new-theme-colors );
+
+@import "./Netflix-assets/assets/scss/bootstrap.scss"

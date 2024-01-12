@@ -1,0 +1,85 @@
+@import "./customize";
+@import "./mixin";
+
+body{
+    background-color: $new-bg-dark;
+    
+}
+nav{
+    background-color:$new-bg-dark;
+    color: white;
+    cursor: pointer;
+    img{
+        width: 100px;
+    }
+    .navbar-text{
+        img{
+            width: 25px;
+        }
+    }
+
+}
+#firstContainer{
+    @include undernavFlex;
+.row {
+    width: 100%;
+    @include undernavFlex;
+
+}
+    .btn-group{
+        display: flex;
+        align-items: end;
+    }
+};
+#films .row{
+    img{
+        width: 100%;
+        &:hover{
+            @include animationFilm;
+        }
+    }
+}
+
+footer{
+    ul{
+        list-style-type: none;
+        li{
+            cursor: pointer;
+        }
+    }
+    .row{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    
+    }
+}
+
+#profileContainer{
+    display: flex;
+    justify-content: center;
+
+    img{
+        width: 100%;
+    }
+}
+
+#settingsBody{
+    background-color: white;
+}
+#mainSettings{
+    ul{
+        list-style-type: none;
+        padding: 0px;
+        li{
+            img{
+                width: 30px;
+                border-radius: 50%;
+            }
+        }
+    }
+    a{
+        text-decoration: none;
+    }
+
+}
